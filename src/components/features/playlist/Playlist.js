@@ -6,6 +6,10 @@ import PlaylistList from './PlaylistList';
 
 const gcpKey = process.env.REACT_APP_GCP_API_KEY;
 const playlistApi = process.env.REACT_APP_YOUTUBE_PLAYLIST_API;
+const brightPl = 'PLCJnKGRxGnIAMSsC2GuS4RY9Zr9tANiSC';
+const cloudyPl = 'PLCJnKGRxGnIDW23IpXYvHV60A1HjPZFU5';
+const rainyPl = 'PLCJnKGRxGnIBAmCzLqCoXxUkSw7Xj6jVe';
+const snowyPl = 'PLCJnKGRxGnIC-88RCYo9eRkdo8xJPFaE7';
 
 const Playlist = (props) => {
   const playlistEl = useRef();
@@ -23,38 +27,38 @@ const Playlist = (props) => {
 
   const pickPlaylist = (moodCode) => {
     const moodCodeCase = {
-      BdF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BnF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BdC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BnC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BdM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BnM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BdH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      BnH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CdF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CnF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CdC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CnC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CdM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CnM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CdH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      CnH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RdF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RnF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RdC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RnC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RdM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RnM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RdH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      RnH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SdF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SnF: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SdC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SnC: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SdM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SnM: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SdH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
-      SnH: 'PLW9z2i0xwq0F3-8LieqflLLWLWZQgvhEX',
+      BdF: snowyPl,
+      BnF: snowyPl,
+      BdC: snowyPl,
+      BnC: snowyPl,
+      BdM: cloudyPl,
+      BnM: cloudyPl,
+      BdH: brightPl,
+      BnH: brightPl,
+      CdF: snowyPl,
+      CnF: snowyPl,
+      CdC: rainyPl,
+      CnC: rainyPl,
+      CdM: cloudyPl,
+      CnM: cloudyPl,
+      CdH: cloudyPl,
+      CnH: cloudyPl,
+      RdF: rainyPl,
+      RnF: rainyPl,
+      RdC: rainyPl,
+      RnC: rainyPl,
+      RdM: rainyPl,
+      RnM: rainyPl,
+      RdH: brightPl,
+      RnH: brightPl,
+      SdF: snowyPl,
+      SnF: snowyPl,
+      SdC: snowyPl,
+      SnC: snowyPl,
+      SdM: snowyPl,
+      SnM: snowyPl,
+      SdH: snowyPl,
+      SnH: snowyPl,
     };
 
     const playlistId = moodCodeCase[moodCode];
