@@ -1,0 +1,25 @@
+.weather__forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#forecast-desc {
+  font-size: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+#forecast-desc::before {
+  content: attr(data-icon);
+  margin: 0 auto 0.5rem auto;
+  font-size: clamp(2.5rem, 10vw, 5rem);
+}
+
+@media (min-width: 64em) {
+  #forecast-desc {
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
+  }
+
+  #forecast-desc::before {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+  }
+}

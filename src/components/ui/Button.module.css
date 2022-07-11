@@ -1,0 +1,44 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font: inherit;
+  padding: 0.25em 1em;
+  background-image: radial-gradient(
+    ellipse 200% 110% at top center,
+    rgba(255, 200, 200, 0.2) 0%,
+    rgba(255, 220, 220, 0.4) 49%,
+    rgba(255, 220, 220, 0.3) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-color: var(--clr-primary);
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3em;
+  box-shadow: var(--shadow-box);
+  transition: transform 150ms ease;
+  text-shadow: var(--shadow-text);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn--alt {
+  background-color: var(--clr-text-light);
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  text-shadow: none;
+  background-image: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-primary);
+  filter: brightness(var(--hover-brightness));
+  color: var(--clr-text-light);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}

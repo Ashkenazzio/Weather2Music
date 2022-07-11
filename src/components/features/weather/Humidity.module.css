@@ -1,0 +1,23 @@
+.weather__humidity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
+#humid-num {
+  font-weight: 200;
+}
+
+#humid-num::before {
+  display: inline-block;
+  margin-right: 0.2em;
+  content: '\f043';
+}
+
+@media (min-width: 64em) {
+  .weather__humidity {
+    justify-content: center;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+  }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@200;400;700&display=swap');
+@import url('./assets/css/font-awesome.all.css');
+
+:root {
+  --clr-primary: #254b59;
+  --hover-brightness: 1.05;
+  
+  --bg-overlay: linear-gradient(
+    315deg,
+    hsl(261, 18%, 56%) 0%,
+    hsl(261, 22%, 65%) 100%
+  );
+
+  --clr-text-light: #f2f2f2;
+  --clr-text-dark: #48484a;
+
+  --ff-primary: 'Poppins', sans-serif;
+
+  --shadow-box: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-text: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-primary);
+  text-align: center;
+  scroll-behavior: smooth;
+  font-family: var(--ff-primary);
+  color: var(--clr-text-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-text-light);
+  border-radius: 100vmax;
+}
+
+.icon-before::before,
+.icon-before::after {
+  display: block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+
+.glass {
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-box);
+  border-radius: 0.5rem;
+}

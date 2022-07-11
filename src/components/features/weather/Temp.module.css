@@ -1,0 +1,22 @@
+.weather__temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: clamp(2rem, 10vw, 4rem);
+  font-weight: 200;
+}
+
+#feels-like {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media (min-width: 64em) {
+  .weather__temp {
+    justify-content: center;
+    font-size: clamp(2rem, 4.25vw, 4rem);
+  }
+
+  #feels-like {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+}

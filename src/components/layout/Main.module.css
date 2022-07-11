@@ -1,0 +1,14 @@
+main {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 100%;
+  gap: 2rem;
+  text-shadow: var(--shadow-text);
+}
+
+@media (min-width: 64em) {
+  main {
+    grid-template-columns: min(21vw, 13.5rem) 1fr min(21vw, 13.5rem);
+    grid-auto-rows: var(--vid-container-h);
+  }
+}

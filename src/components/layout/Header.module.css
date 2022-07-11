@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 90%;
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+@media (min-width: 37.5em) {
+  .header {
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+  }
+}

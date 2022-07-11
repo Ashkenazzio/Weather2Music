@@ -1,0 +1,4 @@
+.footer {
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  padding: 0.5rem;
+}
