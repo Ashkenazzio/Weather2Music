@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weather2music/static/css/main.02b4bf1d.chunk.css",
-    "main.js": "/weather2music/static/js/main.6c18f378.chunk.js",
-    "main.js.map": "/weather2music/static/js/main.6c18f378.chunk.js.map",
+    "main.js": "/weather2music/static/js/main.853b785e.chunk.js",
+    "main.js.map": "/weather2music/static/js/main.853b785e.chunk.js.map",
     "runtime-main.js": "/weather2music/static/js/runtime-main.33503e01.js",
     "runtime-main.js.map": "/weather2music/static/js/runtime-main.33503e01.js.map",
     "static/js/2.7bd27ed3.chunk.js": "/weather2music/static/js/2.7bd27ed3.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.33503e01.js",
     "static/js/2.7bd27ed3.chunk.js",
     "static/css/main.02b4bf1d.chunk.css",
-    "static/js/main.6c18f378.chunk.js"
+    "static/js/main.853b785e.chunk.js"
   ]
 }
