@@ -10,7 +10,6 @@ const Main = (props) => {
   const [songId, setSongId] = useState();
   const [moodCode, setMoodCode] = props.moodCode;
 
-  console.log('main rendered');
   return (
     <main>
       <Weather setMoodCode={setMoodCode} />

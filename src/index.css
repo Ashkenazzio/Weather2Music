@@ -59,6 +59,8 @@ body::-webkit-scrollbar-thumb {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font: var(--fa-font-solid);
+  width: 1em;
+  height: 1em;
 }
 
 .glass {

@@ -6,13 +6,10 @@ const SoundEffects = () => {
     <div className={styles['sound-effects']}>
       <h3>Add background sounds to further set the mood:</h3>
       <div className={styles['sound-effects__btns']}>
-        <SoundButton id='rain-btn' audio='rain'>
-          Rain
-        </SoundButton>
-
-        <SoundButton id='birds-btn' audio='birdsong'>
-          Birdsong
-        </SoundButton>
+        <SoundButton audio='rain'>Rain</SoundButton>
+        <SoundButton audio='birdsong'>Birdsong</SoundButton>
+        <SoundButton audio='ocean'>Ocean</SoundButton>
+        <SoundButton audio='restaurant'>Restaurant</SoundButton>
       </div>
     </div>
   );

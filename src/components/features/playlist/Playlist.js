@@ -110,7 +110,6 @@ const Playlist = (props) => {
     setIsLoading(false);
   };
 
-  console.log('playlist rendered');
   return (
     <aside ref={playlistEl} className={`${styles.playlist} glass`}>
       <h3>Browse Playlist:</h3>
