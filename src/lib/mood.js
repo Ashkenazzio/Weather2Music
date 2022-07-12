@@ -1,3 +1,16 @@
+import bfImg from 'assets/images/bgs/Bright-Freezing-min.webp'
+import bcImg from 'assets/images/bgs/Bright-Cold-min.webp'
+import bmImg from 'assets/images/bgs/Bright-Mid-min.webp'
+import bhImg from 'assets/images/bgs/Bright-Hot-min.webp'
+import cfImg from 'assets/images/bgs/Cloudy-Freezing-min.webp'
+import ccImg from 'assets/images/bgs/Cloudy-Cold-min.webp'
+import cmImg from 'assets/images/bgs/Cloudy-Mid-min.webp'
+import chImg from 'assets/images/bgs/Cloudy-Hot-min.webp'
+import rcImg from 'assets/images/bgs/Rainy-Cold-min.webp'
+import rmImg from 'assets/images/bgs/Rainy-Mid-min.webp'
+import rhImg from 'assets/images/bgs/Rainy-Hot-min.webp'
+import sfImg from 'assets/images/bgs/Snowy-Freezing-min.webp'
+
 export const getMoodCode = (forecastIcon, temp) => {
   const prefix = getPrefix(forecastIcon);
   const infix = getInfix(forecastIcon);
@@ -87,38 +100,38 @@ export const setColors = (prefix) => {
 
 export const setBackground = (moodCode) => {
   const bgCase = {
-    BnF: require('assets/images/bgs/Bright-Freezing.jpg').default,
-    BdF: require('assets/images/bgs/Bright-Freezing.jpg').default,
-    BdC: require('assets/images/bgs/Bright-Cold.jpg').default,
-    BnC: require('assets/images/bgs/Bright-Cold.jpg').default,
-    BdM: require('assets/images/bgs/Bright-Mid.jpg').default,
-    BnM: require('assets/images/bgs/Bright-Mid.jpg').default,
-    BdH: require('assets/images/bgs/Bright-Hot.jpg').default,
-    BnH: require('assets/images/bgs/Bright-Hot.jpg').default,
-    CdF: require('assets/images/bgs/Cloudy-Freezing.jpg').default,
-    CnF: require('assets/images/bgs/Cloudy-Freezing.jpg').default,
-    CdC: require('assets/images/bgs/Cloudy-Cold.jpg').default,
-    CnC: require('assets/images/bgs/Cloudy-Cold.jpg').default,
-    CdM: require('assets/images/bgs/Cloudy-Mid.jpg').default,
-    CnM: require('assets/images/bgs/Cloudy-Mid.jpg').default,
-    CdH: require('assets/images/bgs/Cloudy-Hot.jpg').default,
-    CnH: require('assets/images/bgs/Cloudy-Hot.jpg').default,
-    RdF: require('assets/images/bgs/Rainy-Cold.jpg').default,
-    RnF: require('assets/images/bgs/Rainy-Cold.jpg').default,
-    RdC: require('assets/images/bgs/Rainy-Cold.jpg').default,
-    RnC: require('assets/images/bgs/Rainy-Cold.jpg').default,
-    RdM: require('assets/images/bgs/Rainy-Mid.jpg').default,
-    RnM: require('assets/images/bgs/Rainy-Mid.jpg').default,
-    RdH: require('assets/images/bgs/Rainy-Hot.jpg').default,
-    RnH: require('assets/images/bgs/Rainy-Hot.jpg').default,
-    SdF: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SnF: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SdC: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SnC: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SdM: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SnM: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SdH: require('assets/images/bgs/Snowy-Freezing.jpg').default,
-    SnH: require('assets/images/bgs/Snowy-Freezing.jpg').default,
+    BnF: bfImg,
+    BdF: bfImg,
+    BdC: bcImg,
+    BnC: bcImg,
+    BdM: bmImg,
+    BnM: bmImg,
+    BdH: bhImg,
+    BnH: bhImg,
+    CdF: cfImg,
+    CnF: cfImg,
+    CdC: ccImg,
+    CnC: ccImg,
+    CdM: cmImg,
+    CnM: cmImg,
+    CdH: chImg,
+    CnH: chImg,
+    RdF: rcImg,
+    RnF: rcImg,
+    RdC: rcImg,
+    RnC: rcImg,
+    RdM: rmImg,
+    RnM: rmImg,
+    RdH: rhImg,
+    RnH: rhImg,
+    SdF: sfImg,
+    SnF: sfImg,
+    SdC: sfImg,
+    SnC: sfImg,
+    SdM: sfImg,
+    SnM: sfImg,
+    SdH: sfImg,
+    SnH: sfImg,
   };
 
   return bgCase[moodCode];

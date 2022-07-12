@@ -2,8 +2,9 @@ import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { CoordsProvider } from 'contexts/coords-context';
 import { appGsap } from 'lib/gsap';
 import { setBackground } from './lib/mood';
-
 import styles from './App.module.css';
+import bgImg from 'assets/images/bgs/Background1-min.webp';
+
 import Header from 'components/layout/Header';
 import Main from 'components/layout/Main';
 import Footer from 'components/layout/Footer';
@@ -15,9 +16,7 @@ function App() {
   }, [appEl]);
 
   const [moodCode, setMoodCode] = useState();
-  const [bg, setBg] = useState(
-    require('assets/images/bgs/Bright-Freezing.jpg').default
-  );
+  const [bg, setBg] = useState(bgImg);
 
   useEffect(() => {
     if (moodCode) {
