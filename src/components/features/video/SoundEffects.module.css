@@ -25,4 +25,6 @@
 
 .sound-effects__btns > *::before {
   content: attr(data-icon);
+  width: 1em;
+  height: 1em;
 }
