@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/weather2music/static/css/main.02b4bf1d.chunk.css",
-    "main.js": "/weather2music/static/js/main.04552dd9.chunk.js",
-    "main.js.map": "/weather2music/static/js/main.04552dd9.chunk.js.map",
+    "main.css": "/weather2music/static/css/main.dd10dce5.chunk.css",
+    "main.js": "/weather2music/static/js/main.672c769e.chunk.js",
+    "main.js.map": "/weather2music/static/js/main.672c769e.chunk.js.map",
     "runtime-main.js": "/weather2music/static/js/runtime-main.33503e01.js",
     "runtime-main.js.map": "/weather2music/static/js/runtime-main.33503e01.js.map",
     "static/js/2.7412187f.chunk.js": "/weather2music/static/js/2.7412187f.chunk.js",
     "static/js/2.7412187f.chunk.js.map": "/weather2music/static/js/2.7412187f.chunk.js.map",
     "index.html": "/weather2music/index.html",
-    "static/css/main.02b4bf1d.chunk.css.map": "/weather2music/static/css/main.02b4bf1d.chunk.css.map",
+    "static/css/main.dd10dce5.chunk.css.map": "/weather2music/static/css/main.dd10dce5.chunk.css.map",
     "static/js/2.7412187f.chunk.js.LICENSE.txt": "/weather2music/static/js/2.7412187f.chunk.js.LICENSE.txt",
     "static/media/Background1-min.240b7eba.webp": "/weather2music/static/media/Background1-min.240b7eba.webp",
     "static/media/Bright-Cold-min.636e1722.webp": "/weather2music/static/media/Bright-Cold-min.636e1722.webp",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.33503e01.js",
     "static/js/2.7412187f.chunk.js",
-    "static/css/main.02b4bf1d.chunk.css",
-    "static/js/main.04552dd9.chunk.js"
+    "static/css/main.dd10dce5.chunk.css",
+    "static/js/main.672c769e.chunk.js"
   ]
 }
