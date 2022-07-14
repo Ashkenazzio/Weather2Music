@@ -1,12 +1,11 @@
 .location {
-  display: grid;
-  grid-template-columns: 70% 1fr;
-  gap: 0.5rem;
   align-self: center;
 }
 
-.location__input {
-  display: flex;
+.wrapper{
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  gap: 0.5rem;
   position: relative;
 }
 

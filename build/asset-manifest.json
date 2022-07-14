@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/weather2music/static/css/main.af27dafb.chunk.css",
-    "main.js": "/weather2music/static/js/main.672c769e.chunk.js",
-    "main.js.map": "/weather2music/static/js/main.672c769e.chunk.js.map",
+    "main.css": "/weather2music/static/css/main.c1a4bdb3.chunk.css",
+    "main.js": "/weather2music/static/js/main.45cb3c83.chunk.js",
+    "main.js.map": "/weather2music/static/js/main.45cb3c83.chunk.js.map",
     "runtime-main.js": "/weather2music/static/js/runtime-main.33503e01.js",
     "runtime-main.js.map": "/weather2music/static/js/runtime-main.33503e01.js.map",
-    "static/js/2.7412187f.chunk.js": "/weather2music/static/js/2.7412187f.chunk.js",
-    "static/js/2.7412187f.chunk.js.map": "/weather2music/static/js/2.7412187f.chunk.js.map",
+    "static/js/2.ea22e4e0.chunk.js": "/weather2music/static/js/2.ea22e4e0.chunk.js",
+    "static/js/2.ea22e4e0.chunk.js.map": "/weather2music/static/js/2.ea22e4e0.chunk.js.map",
     "index.html": "/weather2music/index.html",
-    "static/css/main.af27dafb.chunk.css.map": "/weather2music/static/css/main.af27dafb.chunk.css.map",
-    "static/js/2.7412187f.chunk.js.LICENSE.txt": "/weather2music/static/js/2.7412187f.chunk.js.LICENSE.txt",
+    "static/css/main.c1a4bdb3.chunk.css.map": "/weather2music/static/css/main.c1a4bdb3.chunk.css.map",
+    "static/js/2.ea22e4e0.chunk.js.LICENSE.txt": "/weather2music/static/js/2.ea22e4e0.chunk.js.LICENSE.txt",
     "static/media/Background1-min.240b7eba.webp": "/weather2music/static/media/Background1-min.240b7eba.webp",
     "static/media/Bright-Cold-min.636e1722.webp": "/weather2music/static/media/Bright-Cold-min.636e1722.webp",
     "static/media/Bright-Freezing-min.456897d1.webp": "/weather2music/static/media/Bright-Freezing-min.456897d1.webp",
@@ -23,16 +23,16 @@
     "static/media/Rainy-Hot-min.1fc0ea68.webp": "/weather2music/static/media/Rainy-Hot-min.1fc0ea68.webp",
     "static/media/Rainy-Mid-min.e0346516.webp": "/weather2music/static/media/Rainy-Mid-min.e0346516.webp",
     "static/media/Snowy-Freezing-min.456897d1.webp": "/weather2music/static/media/Snowy-Freezing-min.456897d1.webp",
+    "static/media/beach.mp3": "/weather2music/static/media/beach.a2700cbd.mp3",
     "static/media/birdsong.mp3": "/weather2music/static/media/birdsong.9c4c7a4e.mp3",
     "static/media/index.css": "/weather2music/static/media/fa-v4compatibility.afac8956.woff2",
-    "static/media/ocean.mp3": "/weather2music/static/media/ocean.a2700cbd.mp3",
     "static/media/rain.mp3": "/weather2music/static/media/rain.9f0d7770.mp3",
     "static/media/restaurant.mp3": "/weather2music/static/media/restaurant.837a4aa6.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.33503e01.js",
-    "static/js/2.7412187f.chunk.js",
-    "static/css/main.af27dafb.chunk.css",
-    "static/js/main.672c769e.chunk.js"
+    "static/js/2.ea22e4e0.chunk.js",
+    "static/css/main.c1a4bdb3.chunk.css",
+    "static/js/main.45cb3c83.chunk.js"
   ]
 }

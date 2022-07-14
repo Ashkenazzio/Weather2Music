@@ -14,12 +14,12 @@
 
 .sound-effects__btns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
 }
 
 .sound-effects__btns > * {
-  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  font-size: clamp(0.50rem, 2vw, 1rem);
   box-shadow: var(--shadow-text);
 }
 

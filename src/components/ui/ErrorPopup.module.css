@@ -1,0 +1,19 @@
+.error {
+  position: absolute;
+  top: -60%;
+  padding: 0.5em;
+  background: #ff4040;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+
+.error::before {
+  content: '';
+  top: 100%;
+  left: 10%;
+  position: absolute;
+  border: solid transparent;
+  border-top-color: #ff4040;
+  border-width: 0.5em;
+}

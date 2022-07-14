@@ -17,6 +17,14 @@ export const headerGsap = (ref) => {
   });
 };
 
+export const errorGsap = (ref) => {
+  gsap.from(ref.current, {
+    duration: 0.4,
+    opacity: 0,
+    ease: 'power3.out',
+  });
+};
+
 export const weatherGsap = (ref) => {
   gsap.from(ref.current, {
     delay: 1,

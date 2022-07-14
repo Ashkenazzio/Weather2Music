@@ -1,7 +1,8 @@
-import React, { useEffect, useRef, useContext } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import CoordsContext from 'contexts/coords-context';
 import styles from './Location.module.css';
 
+import ErrorPopup from 'components/ui/ErrorPopup';
 import Button from 'components/ui/Button';
 import ButtonAlt from 'components/ui/ButtonAlt';
 import Input from 'components/ui/Input';
@@ -27,6 +28,7 @@ function loadAsyncScript(src) {
 
 const Location = () => {
   const searchInput = useRef(null);
+  const [placeIsValid, setPlaceIsValid] = useState(true);
   const { coords, setCoords } = useContext(CoordsContext);
 
   // load map script after mounted
@@ -123,27 +125,35 @@ const Location = () => {
 
   // adds key to call weather fetching
   const getWeather = () => {
-    if (coords.lat !== 0 && coords.lon !== 0) {
-      setCoords({ ...coords, getWeather: true });
+    if (coords.lat === 0 && coords.lon === 0) {
+      setPlaceIsValid(false);
+      return;
     }
+    setPlaceIsValid(true);
+    setCoords({ ...coords, getWeather: true });
   };
 
   return (
     <div className={styles.location}>
       <Cta />
-      <Input
-        className={styles['location__input']}
-        ref={searchInput}
-        type='text'
-      />
-      <div className={`${styles['main-btn']} glass`}>
-        <Button onClick={getWeather} id={styles['get-weather']}>
-          Get
-        </Button>
+      <div className={styles.wrapper}>
+        {!placeIsValid && (
+          <ErrorPopup>Please make sure you enter a valid place</ErrorPopup>
+        )}
+        <Input
+          className={styles['location__input']}
+          ref={searchInput}
+          type='text'
+        />
+        <div className={`${styles['main-btn']} glass`}>
+          <Button onClick={getWeather} id={styles['get-weather']}>
+            Get
+          </Button>
+        </div>
+        <ButtonAlt onClick={findMyLocation} id={styles['auto-loc']}>
+          Use Current Location
+        </ButtonAlt>
       </div>
-      <ButtonAlt onClick={findMyLocation} id={styles['auto-loc']}>
-        Use Current Location
-      </ButtonAlt>
     </div>
   );
 };

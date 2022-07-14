@@ -38,7 +38,7 @@ const Weather = (props) => {
         const data = await resp.json();
         const todaysWeather = data.list[0];
         isWeather(todaysWeather);
-        setCoords({ ...coords, getWeather: false });
+        setCoords({ lat: 0, lon: 0, getWeather: false });
       } catch (error) {
         console.log(error);
         alert('Something went wrong! Try again later');
