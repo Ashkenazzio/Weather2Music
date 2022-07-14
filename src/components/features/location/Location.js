@@ -65,12 +65,12 @@ const Location = () => {
   // do something on place change
   const onPlaceChanged = (autocomplete) => {
     const place = autocomplete.getPlace();
-
     setCoords({
       ...coords,
       lat: place.geometry.location.lat(),
       lon: place.geometry.location.lng(),
     });
+    setPlaceIsValid(true);
   };
 
   // find position and assign coordinates
@@ -115,6 +115,8 @@ const Location = () => {
         const place = location.results[0].address_components;
         searchInput.current.value =
           place[2].long_name + ', ' + place[4].long_name;
+
+        setPlaceIsValid(true);
       } catch (error) {
         console.log(error);
         searchInput.current.value = '';
