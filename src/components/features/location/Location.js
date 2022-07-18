@@ -138,9 +138,6 @@ const Location = () => {
     searchInput.current.value = '';
   };
 
-  const focusHandler = (event) => {
-    console.log('hi');
-  };
   return (
     <div className={styles.location}>
       <Cta />
@@ -151,7 +148,6 @@ const Location = () => {
         <Input
           className={styles['location__input']}
           ref={searchInput}
-          onFocus={focusHandler}
           type='text'
         />
         <div className={`${styles['main-btn']} glass`}>
