@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weather2music/static/css/main.c1a4bdb3.chunk.css",
+    "main.css": "/weather2music/static/css/main.72d0294d.chunk.css",
     "main.js": "/weather2music/static/js/main.506e0c4b.chunk.js",
     "main.js.map": "/weather2music/static/js/main.506e0c4b.chunk.js.map",
     "runtime-main.js": "/weather2music/static/js/runtime-main.33503e01.js",
@@ -8,7 +8,7 @@
     "static/js/2.ea22e4e0.chunk.js": "/weather2music/static/js/2.ea22e4e0.chunk.js",
     "static/js/2.ea22e4e0.chunk.js.map": "/weather2music/static/js/2.ea22e4e0.chunk.js.map",
     "index.html": "/weather2music/index.html",
-    "static/css/main.c1a4bdb3.chunk.css.map": "/weather2music/static/css/main.c1a4bdb3.chunk.css.map",
+    "static/css/main.72d0294d.chunk.css.map": "/weather2music/static/css/main.72d0294d.chunk.css.map",
     "static/js/2.ea22e4e0.chunk.js.LICENSE.txt": "/weather2music/static/js/2.ea22e4e0.chunk.js.LICENSE.txt",
     "static/media/Background1-min.240b7eba.webp": "/weather2music/static/media/Background1-min.240b7eba.webp",
     "static/media/Bright-Cold-min.636e1722.webp": "/weather2music/static/media/Bright-Cold-min.636e1722.webp",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.33503e01.js",
     "static/js/2.ea22e4e0.chunk.js",
-    "static/css/main.c1a4bdb3.chunk.css",
+    "static/css/main.72d0294d.chunk.css",
     "static/js/main.506e0c4b.chunk.js"
   ]
 }
