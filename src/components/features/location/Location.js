@@ -133,8 +133,14 @@ const Location = () => {
     }
     setPlaceIsValid(true);
     setCoords({ ...coords, getWeather: true });
+
+    searchInput.current.placeholder = searchInput.current.value;
+    searchInput.current.value = '';
   };
 
+  const focusHandler = (event) => {
+    console.log('hi');
+  };
   return (
     <div className={styles.location}>
       <Cta />
@@ -145,6 +151,7 @@ const Location = () => {
         <Input
           className={styles['location__input']}
           ref={searchInput}
+          onFocus={focusHandler}
           type='text'
         />
         <div className={`${styles['main-btn']} glass`}>
